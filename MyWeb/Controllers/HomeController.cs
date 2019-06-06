@@ -35,6 +35,9 @@ namespace MyWeb.Controllers
             return PartialView(result.ToList());
         }
 
-        public ActionResult 
+        public ActionResult GetHotProducts()
+        {
+            var result = from item in db.Products where item
+        }
     }
 }
